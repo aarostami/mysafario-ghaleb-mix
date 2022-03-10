@@ -1,0 +1,16 @@
+/*---- footer ----*/
+footer {
+	background-color: #04091D;
+	
+	#gallery ul {
+		margin-bottom: 0.3rem;
+	
+		#gallery ul li {
+			margin-right: 0;
+			
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

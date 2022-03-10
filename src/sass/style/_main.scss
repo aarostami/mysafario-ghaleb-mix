@@ -1,0 +1,113 @@
+/*---- main -----*/
+main > .mycontain {
+	margin-top: $container_marginTop;
+}
+
+main .mycontain {
+	#servicebox_con, #commentbox_con, #blogsbox_con {
+		margin-top: $boxcon_marginTop;
+		margin-bottom: $boxcon_marginBottom;
+		
+		img {
+			width: 50px;
+			height: 50px;
+		}
+	}
+
+	.card img {
+		width: 10rem;
+		height: 10rem;
+	}
+}
+
+/*---- #about -----*/
+main .container-fluid#about {
+	padding-top: $container_paddingTop;
+	padding-bottom: $container_paddingBottom;
+
+	img {
+		@include image_style;
+	}
+}
+
+/*---- #tour ----*/
+main .container#tour {
+	margin-top: $container_marginTop;
+	margin-bottom: $container_marginBottom;
+
+	div[class^="col"] {
+		&:first-of-type img {
+			width: 100%;
+			height: 35rem;
+		}
+
+		&:last-of-type img {
+			width: 100%;
+			height: 25.7rem;
+		}
+	}
+}
+
+/*---- #tour2 -----*/
+main .container#tour2 div[class^="col"] {
+	&:first-of-type img {
+		@include image_style;
+	}
+
+	&:last-of-type img {
+		@include image_style;
+	}
+}
+
+/*---- comments -----*/
+main .container-fluid#comments {
+	margin-top: $container_marginTop;
+}
+
+/* change bootstrap-rtl.css */
+.carousel-item {
+	float: left !important;
+	margin-left: 0 !important;
+}
+
+main .container#slider {
+
+	#mycarousel ul {
+		position: absolute;
+		bottom: -45%;
+
+		li {
+			background-color: #adadad;
+			width: 19px;
+			height: 4px;
+			border: 5px solid transparent;
+			border-radius: 15px;
+		}
+
+		li.active {
+			background-color: $btn_background_color;
+			width: 19px;
+			height: 5px;
+			transform: translateY(-2px);
+		}
+	}
+}
+
+/*---- search ----*/
+main .container#search {
+	margin-top: $container_marginTop;
+	margin-bottom: $container_marginBottom;
+}
+
+/*---- blogs ----*/
+main .container-fluid#blogs .card {
+	transition: box-shadow 0.5s;
+
+	&:hover {
+		box-shadow: 0px 0px 18px #e9e9e9, -0px 0px 18px #e9e9e9;
+	}
+
+	img {
+		@include image_style;
+	}
+}

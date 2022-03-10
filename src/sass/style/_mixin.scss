@@ -1,0 +1,12 @@
+/*---- navigation ----*/
+@mixin sub_nav_style($sub_visibility, $sub_opacity, $sub_top) {
+	visibility: $sub_visibility;
+	opacity: $sub_opacity;
+	top: $sub_top;
+}
+
+/*---- main -----*/
+@mixin image_style {
+	width: 100%;
+	height: 30rem;
+}
